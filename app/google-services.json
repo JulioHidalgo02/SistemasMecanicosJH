@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "814237397701",
+    "project_id": "sistemasmecanicosjh-6dd27",
+    "storage_bucket": "sistemasmecanicosjh-6dd27.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:814237397701:android:050377357fe0129afcb6ac",
+        "android_client_info": {
+          "package_name": "com.sistemasmcanicosjh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "814237397701-voj3horlduidlmg4lc98o5g1j8sa34it.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9tsA9iqjSVCVQC6-hKIHARXwWhFttOWo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "814237397701-voj3horlduidlmg4lc98o5g1j8sa34it.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

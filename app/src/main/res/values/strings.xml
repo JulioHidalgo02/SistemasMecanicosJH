@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SistemasMécanicosJH</string>
+    <string name="Correo">Correo Electrónico</string>
+    <string name="Contrasenia">Contraseña</string>
+    <string name="SistemasMecanicos">Sistemas Mecánicos JH</string>
+    <string name="Registrarse">Registrarse</string>
+    <string name="IniciarSesion">Iniciar Sesión</string>
+
+
+
+</resources>
