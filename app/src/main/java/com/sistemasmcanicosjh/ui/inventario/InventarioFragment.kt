@@ -7,6 +7,8 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
+import com.sistemasmcanicosjh.R
 import com.sistemasmcanicosjh.databinding.FragmentInventarioBinding
 import com.sistemasmcanicosjh.viewmodel.InventarioViewModel
 
@@ -14,9 +16,6 @@ class InventarioFragment : Fragment() {
 
     private lateinit var inventarioViewModel: InventarioViewModel
     private var _binding: FragmentInventarioBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -28,13 +27,12 @@ class InventarioFragment : Fragment() {
             ViewModelProvider(this).get(InventarioViewModel::class.java)
 
         _binding = FragmentInventarioBinding.inflate(inflater, container, false)
-        val root: View = binding.root
 
-        val textView: TextView = binding.textHome
-        inventarioViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
+        binding.addInventario.setOnClickListener{
+            findNavController().navigate(R.id.action_nav_inventario_to_addInventarioFragment)
         }
-        return root
+
+        return binding.root
     }
 
     override fun onDestroyView() {

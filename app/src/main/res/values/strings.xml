@@ -18,8 +18,17 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="logoff">Cerrar Sesión</string>
     <string name="Inventario">Sistemas Mecánicos JH - Inventario</string>
     <string name="Inventario2">Inventario</string>
+
+    <string name="msg_nombre">Nombre del Objeto</string>
+    <string name="msg_marca">Marca</string>
+    <string name="msg_cantidad">Cantidad de Objetos</string>
+    <string name="msg_estado">Estado</string>
+    <string name="bt_agregar">Agregar</string>
+    <string name="msgObjAgregado">Objeto agregado Satisfactoriamente!</string>
+    <string name="msgObjError">Error, Faltan Datos!</string>
 
 
 </resources>

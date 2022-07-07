@@ -9,7 +9,11 @@
         android:id="@+id/nav_inventario"
         android:name="com.sistemasmcanicosjh.ui.inventario.InventarioFragment"
         android:label="@string/Inventario"
-        tools:layout="@layout/fragment_inventario" />
+        tools:layout="@layout/fragment_inventario" >
+        <action
+            android:id="@+id/action_nav_inventario_to_addInventarioFragment"
+            app:destination="@id/addInventarioFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_gallery"
@@ -22,4 +26,13 @@
         android:name="com.sistemasmcanicosjh.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/addInventarioFragment"
+        android:name="com.sistemasmcanicosjh.ui.inventario.AddInventarioFragment"
+        android:label="fragment_add_inventario"
+        tools:layout="@layout/fragment_add_inventario" >
+        <action
+            android:id="@+id/action_addInventarioFragment_to_nav_inventario"
+            app:destination="@id/nav_inventario" />
+    </fragment>
 </navigation>
