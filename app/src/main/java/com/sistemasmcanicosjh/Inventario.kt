@@ -37,7 +37,7 @@ class Inventario : AppCompatActivity() {
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.nav_inventario, R.id.nav_gallery, R.id.nav_slideshow, R.id.logoff
+                R.id.nav_inventario, R.id.nav_gallery, R.id.nav_slideshow,  R.id.logoff
             ), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
