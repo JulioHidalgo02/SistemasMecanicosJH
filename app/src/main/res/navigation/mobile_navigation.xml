@@ -16,15 +16,15 @@
     </fragment>
 
     <fragment
-        android:id="@+id/nav_gallery"
+        android:id="@+id/nav_contacto"
         android:name="com.sistemasmcanicosjh.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
+        android:label="@string/menu_contacto"
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
+        android:id="@+id/nav_clientes"
         android:name="com.sistemasmcanicosjh.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
+        android:label="@string/menu_cliente"
         tools:layout="@layout/fragment_slideshow" />
     <fragment
         android:id="@+id/addInventarioFragment"

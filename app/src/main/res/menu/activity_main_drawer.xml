@@ -9,13 +9,13 @@
             android:icon="@drawable/ic_inventario"
             android:title="@string/Inventario2" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery" />
+            android:id="@+id/nav_clientes"
+            android:icon="@drawable/ic_cliente"
+            android:title="@string/menu_cliente" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
+            android:id="@+id/nav_contacto"
+            android:icon="@drawable/ic_baseline_phone_24"
+            android:title="@string/menu_contacto" />
         <item android:title="" />
         <item android:title="" />
         <item android:title="" />

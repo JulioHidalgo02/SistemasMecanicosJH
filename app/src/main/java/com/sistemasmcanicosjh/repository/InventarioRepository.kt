@@ -5,6 +5,7 @@ import com.sistemasmcanicosjh.data.InventarioDao
 import com.sistemasmcanicosjh.model.Inventario
 
 class InventarioRepository(private val inventarioDao: InventarioDao) {
+
     val getAllData : LiveData<List<Inventario>> = inventarioDao.getAllData()
 
     suspend fun addInventario(obj: Inventario){
