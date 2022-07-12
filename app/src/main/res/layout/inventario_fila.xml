@@ -2,6 +2,7 @@
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/vistaFila"
     android:layout_width="match_parent"
     android:layout_height="160dp"
@@ -38,7 +39,6 @@
             android:text="@string/tv_marca"
             android:textAlignment="center"
             android:textSize="20sp"
-            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageView"
@@ -51,7 +51,6 @@
             android:text="@string/tv_cantidadObjetos"
             android:textAlignment="center"
             android:textSize="20sp"
-            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
@@ -69,7 +68,6 @@
             android:textAlignment="center"
 
             android:textSize="20sp"
-            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
@@ -85,7 +83,6 @@
             android:layout_marginTop="4dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_nombreObjeto"
-            app:srcCompat="@drawable/herramienta"
             android:contentDescription="@string/tv_herramienta" />
 
 
