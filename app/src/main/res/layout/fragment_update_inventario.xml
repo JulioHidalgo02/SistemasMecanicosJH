@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"    xmlns:app="http://schemas.android.com/apk/res-auto"    xmlns:tools="http://schemas.android.com/tools"    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.inventario.AddInventarioFragment">
+    tools:context=".ui.inventario.UpdateInventarioFragment">
     <ScrollView
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -25,15 +25,21 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="@string/msg_nombre"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textColorHint="#37474F"
+                android:autofillHints="" />
 
             <EditText
                 android:id="@+id/etMarca"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:autofillHints=""
                 android:ems="10"
                 android:hint="@string/msg_marca"
-                android:inputType="textEmailAddress" />
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp"
+                android:textColorHint="#424242" />
 
             <EditText
                 android:id="@+id/etCantidad"
@@ -41,23 +47,29 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="@string/msg_cantidad"
-                android:inputType="phone" />
+                android:inputType="phone"
+                android:minHeight="48dp"
+                android:textColorHint="#37474F"
+                android:autofillHints="" />
 
             <EditText
                 android:id="@+id/etEstado"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:autofillHints=""
                 android:ems="10"
                 android:hint="@string/msg_estado"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textColorHint="#424242" />
 
             <Button
                 android:id="@+id/bt_Updated"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#58606D"
                 android:backgroundTint="#F9CD16"
-                android:text="@string/bt_agregar" />
+                android:text="@string/bt_actualizar"
+                android:textColor="#455A64" />
 
 
         </LinearLayout>

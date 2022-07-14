@@ -16,6 +16,16 @@
         android:backgroundTint="@color/GrisClaro">
 
 
+        <Button
+            android:id="@+id/bt_Update"
+            android:layout_width="123dp"
+            android:layout_height="48dp"
+            android:backgroundTint="#F9CD16"
+            android:text="@string/bt_actualizar"
+            android:textColor="#58606D"
+            tools:layout_editor_absoluteX="229dp"
+            tools:layout_editor_absoluteY="123dp" />
+
         <TextView
             android:id="@+id/tv_nombreObjeto"
             android:layout_width="wrap_content"
@@ -38,11 +48,13 @@
             android:layout_height="wrap_content"
             android:text="@string/tv_marca"
             android:textAlignment="center"
-            android:textSize="20sp"
+            android:textSize="15sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.072"
             app:layout_constraintStart_toEndOf="@+id/imageView"
-            app:layout_constraintTop_toBottomOf="@+id/tv_nombreObjeto" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_nombreObjeto"
+            app:layout_constraintVertical_bias="0.407" />
 
         <TextView
             android:id="@+id/tv_cantidadObjetos"
@@ -50,13 +62,14 @@
             android:layout_height="wrap_content"
             android:text="@string/tv_cantidadObjetos"
             android:textAlignment="center"
-            android:textSize="20sp"
+            android:textSize="15sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
 
+            app:layout_constraintHorizontal_bias="0.072"
             app:layout_constraintStart_toEndOf="@+id/imageView"
-            app:layout_constraintTop_toBottomOf="@+id/tv_marca" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_marca"
+            app:layout_constraintVertical_bias="0.17" />
 
         <TextView
             android:id="@+id/tv_estado"
@@ -67,23 +80,23 @@
             android:text="@string/tv_estado"
             android:textAlignment="center"
 
-            android:textSize="20sp"
+            android:textSize="15sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintHorizontal_bias="0.072"
             app:layout_constraintStart_toEndOf="@+id/imageView"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="138dp"
-            android:layout_height="110dp"
+            android:layout_width="137dp"
+            android:layout_height="89dp"
             android:layout_marginStart="4dp"
             android:layout_marginTop="4dp"
+            android:contentDescription="@string/tv_herramienta"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_nombreObjeto"
-            android:contentDescription="@string/tv_herramienta" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_nombreObjeto" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

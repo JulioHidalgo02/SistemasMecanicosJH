@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_nav_inventario_to_addInventarioFragment"
             app:destination="@id/addInventarioFragment" />
+        <action
+            android:id="@+id/action_nav_inventario_to_updateInventarioFragment2"
+            app:destination="@id/updateInventarioFragment2" />
     </fragment>
 
     <fragment
@@ -34,5 +37,17 @@
         <action
             android:id="@+id/action_addInventarioFragment_to_nav_inventario"
             app:destination="@id/nav_inventario" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateInventarioFragment2"
+        android:name="com.sistemasmcanicosjh.ui.inventario.UpdateInventarioFragment"
+        android:label="fragment_update_inventario"
+        tools:layout="@layout/fragment_update_inventario" >
+        <action
+            android:id="@+id/action_updateInventarioFragment2_to_nav_inventario"
+            app:destination="@id/nav_inventario" />
+        <argument
+            android:name="inventario"
+            app:argType="com.sistemasmcanicosjh.model.Inventario" />
     </fragment>
 </navigation>

@@ -9,6 +9,8 @@ import com.sistemasmcanicosjh.databinding.FragmentAddInventarioBinding
 import com.sistemasmcanicosjh.model.Inventario
 import com.sistemasmcanicosjh.ui.inventario.InventarioFragment
 import com.sistemasmcanicosjh.ui.inventario.InventarioFragmentDirections
+import com.sistemasmcanicosjh.ui.inventario.InventarioFragmentDirections.Companion.actionNavInventarioToUpdateInventarioFragment2
+import com.sistemasmcanicosjh.ui.inventario.UpdateInventarioFragmentDirections
 
 
 class InventarioAdapter : RecyclerView.Adapter<InventarioAdapter.InventarioViewHolder>() {
@@ -23,6 +25,11 @@ class InventarioAdapter : RecyclerView.Adapter<InventarioAdapter.InventarioViewH
             itemBinding.tvEstado.text = inventario.estado
             itemBinding.tvMarca.text = inventario.marca
             itemBinding.tvCantidadObjetos.text = inventario.cantidad.toString()
+            itemBinding.btUpdate.setOnClickListener{
+                val accion = InventarioFragmentDirections
+                    .actionNavInventarioToUpdateInventarioFragment2(inventario)
+                itemView.findNavController().navigate(accion)         }
+
         }
     }
 

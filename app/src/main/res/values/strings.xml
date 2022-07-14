@@ -27,6 +27,7 @@
     <string name="msg_cantidad">Cantidad de Objetos</string>
     <string name="msg_estado">Estado</string>
     <string name="bt_agregar">Agregar</string>
+    <string name="bt_actualizar">Actualizar</string>
     <string name="msgObjAgregado">Objeto agregado Satisfactoriamente!</string>
     <string name="msgObjError">Error, Faltan Datos!</string>
     <string name="tv_nombreObjeto">TextView</string>
@@ -34,6 +35,8 @@
     <string name="tv_cantidadObjetos">TextView</string>
     <string name="tv_estado">TextView</string>
     <string name="tv_herramienta">TODO</string>
+    <string name="msgInventarioActualizado" />
+    <string name="msgFaltanDatos" />
 
 
 </resources>
