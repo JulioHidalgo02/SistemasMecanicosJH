@@ -30,7 +30,7 @@ class AddInventarioFragment : Fragment() {
 
         inventarioViewModel = ViewModelProvider(this).get(InventarioViewModel::class.java)
 
-        binding.btAdd.setOnClickListener{ insertaObjeto()}
+        binding.btUpdated.setOnClickListener{ insertaObjeto()}
 
         return binding.root
     }
