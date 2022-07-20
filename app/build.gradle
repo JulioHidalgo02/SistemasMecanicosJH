@@ -18,7 +18,7 @@ android {
 
     defaultConfig {
         applicationId "com.sistemasmcanicosjh"
-        minSdk 27
+        minSdk 26
         targetSdk 32
         versionCode 1
         versionName "1.0"
@@ -48,7 +48,7 @@ dependencies {
     implementation 'com.google.android.material:material:1.6.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation 'com.google.firebase:firebase-auth-ktx:21.0.6'
-    implementation 'com.google.firebase:firebase-common-ktx:20.1.1'
+    implementation 'com.google.firebase:firebase-firestore-ktx:24.2.1'
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.5.0'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.0'
     implementation 'androidx.navigation:navigation-fragment-ktx:2.5.0'
