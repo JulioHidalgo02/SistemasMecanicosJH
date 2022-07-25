@@ -34,12 +34,12 @@ class UpdateClientesFragment : Fragment() {
 
         clientesViewModel = ViewModelProvider(this).get(ClientesViewModel::class.java)
 
-        binding.etNombreCompleto.setText(args.cliente.nombreCompleto)
-        binding.etCorreo.setText(args.clientes.correo)
-        binding.etRutaImagen.setText(args.rutaImagen.correo)
-        binding.etLatitud.setText(args.clientes.latitud.toString())
-        binding.etLongitud.setText(args.clientes.longitud.toString())
-        binding.etAltura.setText(args.clientes.altura.toString())
+        binding.etNombreCompleto.setText(args.clintes.nombreCompleto)
+        binding.etCorreo.setText(args.clintes.correo)
+        binding.etRutaImagen.setText(args.clintes.rutaImagen)
+        binding.etLatitud.setText(args.clintes.latitud.toString())
+        binding.etLongitud.setText(args.clintes.longitud.toString())
+        binding.etAltura.setText(args.clintes.altura.toString())
 
 
         binding.btUpdated.setOnClickListener{ updateObjeto()}
@@ -57,7 +57,7 @@ class UpdateClientesFragment : Fragment() {
 
 
       if(nombreCompleto.isNotEmpty()){
-            val clientes = Clientes(args.clientes.id,nombreCompleto, correo, latitud, longitud,altura,rutaImagen)
+            val clientes = Clientes(args.clintes.id,nombreCompleto, correo, latitud, longitud,altura,rutaImagen)
             clientesViewModel.updateClientes(clientes)
             Toast.makeText(requireContext(),getString(R.string.msgClientesActualizado),Toast.LENGTH_LONG).show()
         } else{
