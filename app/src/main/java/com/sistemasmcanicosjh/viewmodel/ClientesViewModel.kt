@@ -15,13 +15,13 @@ class ClientesViewModel(application: Application)
     init {
         getAllData = repository.getAllData
     }
-    fun agregarCliente(cliente: Clientes){
-        repository.agregarCliente(cliente)
+    fun addClientes(cliente: Clientes){
+        repository.addClientes(cliente)
     }
-    fun actualizarCliente(cliente: Clientes){
-        repository.actualizarCliente(cliente)
+    fun updateClientes(cliente: Clientes){
+        repository.updateClientes(cliente)
     }
-    fun deleteCliente(cliente: Clientes){
-        repository.deleteCliente(cliente)
+    fun deleteClientes(cliente: Clientes){
+        repository.deleteClientes(cliente)
     }
 }

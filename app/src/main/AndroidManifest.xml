@@ -14,7 +14,11 @@
         android:theme="@style/Theme.SistemasMécanicosJH"
         tools:targetApi="31">
 
-
+        <activity
+            android:name=".Clientes"
+            android:exported="false"
+            android:label="Clientes"
+            android:theme="@style/Theme.SistemasMécanicosJH.NoActionBar" />
         <activity
             android:name=".Inventario"
             android:exported="false"

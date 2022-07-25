@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"    xmlns:app="http://schemas.android.com/apk/res-auto"    xmlns:tools="http://schemas.android.com/tools"    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.clientes.UpdateClientesFragment">
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/GrisClaro"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/etNombreCompleto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/msg_nombreCompleto"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textColorHint="#37474F" />
+
+            <EditText
+                android:id="@+id/etCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/msg_correo"
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp"
+                android:textColorHint="#424242" />
+
+            <EditText
+                android:id="@+id/etLatitud"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/msg_latitud"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp"
+                android:textColorHint="#37474F" />
+
+            <EditText
+                android:id="@+id/etLongitud"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/msg_longitud"
+                android:inputType="textPersonName|numberDecimal"
+                android:minHeight="48dp"
+                android:textColorHint="#424242" />
+
+            <EditText
+                android:id="@+id/etAltura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/msg_altura"
+                android:inputType="textPersonName|numberDecimal"
+                android:minHeight="48dp"
+                android:textColorHint="#424242" />
+
+            <EditText
+                android:id="@+id/etRutaImagen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/msg_rutaImagen"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textColorHint="#424242" />
+
+            <Button
+                android:id="@+id/bt_Updated"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#F9CD16"
+                android:text="@string/bt_actualizar"
+                android:textColor="#455A64" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

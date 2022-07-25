@@ -19,16 +19,24 @@
     </fragment>
 
     <fragment
+        android:id="@+id/nav_clientes"
+        android:name="com.sistemasmcanicosjh.ui.clientes.ClientesFragment"
+        android:label="@string/Inventario"
+        tools:layout="@layout/fragment_clientes">
+        <action
+            android:id="@+id/action_nav_clientes_to_addClintesFragment"
+            app:destination="@id/addClientesFragment" />
+        <action
+            android:id="@+id/action_nav_clientes_to_updateClientesFragment2"
+            app:destination="@id/updateClientesFragment2" />
+    </fragment>
+
+    <fragment
         android:id="@+id/nav_contacto"
         android:name="com.sistemasmcanicosjh.ui.gallery.GalleryFragment"
         android:label="@string/menu_contacto"
         tools:layout="@layout/fragment_gallery" />
 
-    <fragment
-        android:id="@+id/nav_clientes"
-        android:name="com.sistemasmcanicosjh.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_cliente"
-        tools:layout="@layout/fragment_slideshow" />
     <fragment
         android:id="@+id/addInventarioFragment"
         android:name="com.sistemasmcanicosjh.ui.inventario.AddInventarioFragment"
@@ -49,5 +57,25 @@
         <argument
             android:name="inventario"
             app:argType="com.sistemasmcanicosjh.model.Inventario" />
+    </fragment>
+    <fragment
+        android:id="@+id/addClientesFragment"
+        android:name="com.sistemasmcanicosjh.ui.clientes.AddClientesFragment"
+        android:label="fragment_add_clientes"
+        tools:layout="@layout/fragment_add_clientes" >
+        <action
+            android:id="@+id/action_addClientesFragment_to_nav_clientes"
+            app:destination="@id/nav_clientes" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateClientesFragment2"
+        android:name="com.sistemasmcanicosjh.ui.clientes.UpdateClientesFragment"
+        android:label="fragment_update_clientes"
+        tools:layout="@layout/fragment_update_clientes" >
+        <action
+            android:id="@+id/action_updateClientesFragment2_to_nav_clientes"
+            app:destination="@id/nav_clientes" />
+        <argument android:name="clintes"
+            app:argType="com.sistemasmcanicosjh.model.Clientes" />
     </fragment>
 </navigation>

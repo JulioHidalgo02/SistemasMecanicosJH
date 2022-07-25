@@ -26,6 +26,12 @@
     <string name="msg_marca">Marca</string>
     <string name="msg_cantidad">Cantidad de Objetos</string>
     <string name="msg_estado">Estado</string>
+    <string name="msg_nombreCompleto">Nombre Completo</string>
+    <string name="msg_correo">Correo</string>
+    <string name="msg_longitud">Longitug</string>
+    <string name="msg_latitud">Latitud</string>
+    <string name="msg_altura">Altura</string>
+    <string name="msg_rutaImagen">Ruta Imagen</string>
     <string name="bt_agregar">Agregar</string>
     <string name="bt_actualizar">Actualizar</string>
     <string name="msgObjAgregado">Objeto agregado Satisfactoriamente!</string>
@@ -37,6 +43,7 @@
     <string name="tv_herramienta">TODO</string>
     <string name="msgInventarioActualizado" />
     <string name="msgFaltanDatos" />
+    <string name="msgClientesActualizado" />
 
 
 </resources>

@@ -7,15 +7,15 @@ import com.sistemasmcanicosjh.model.Clientes
 class ClientesRepository(private val clientesDao: ClientesDao) {
     val getAllData : MutableLiveData<List<Clientes>> = clientesDao.obtenerClientes()
 
-    fun agregarCliente(cliente: Clientes){
+    fun addClientes(cliente: Clientes){
         clientesDao.saveCliente(cliente)
     }
 
-    fun actualizarCliente(cliente: Clientes){
+    fun updateClientes(cliente: Clientes){
         clientesDao.saveCliente(cliente)
     }
 
-    fun deleteCliente(cliente: Clientes){
+    fun deleteClientes(cliente: Clientes){
         clientesDao.deleteCliente(cliente)
     }
 }
