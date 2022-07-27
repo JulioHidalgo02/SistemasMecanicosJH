@@ -63,13 +63,32 @@
                 android:minHeight="48dp"
                 android:textColorHint="#424242" />
 
-            <Button
-                android:id="@+id/bt_Updated"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#F9CD16"
-                android:text="@string/bt_actualizar"
-                android:textColor="#455A64" />
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bt_DeleteInventario"
+                    android:layout_width="163dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="15dp"
+                    android:backgroundTint="#F9CD16"
+                    android:text="@string/bt_eliminar"
+                    android:textColor="#455A64" />
+
+                <Button
+                    android:id="@+id/bt_Updated"
+                    android:layout_width="163dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:backgroundTint="#F9CD16"
+                    android:text="@string/bt_actualizar"
+                    android:textColor="#455A64" />
+
+            </LinearLayout>
 
 
         </LinearLayout>

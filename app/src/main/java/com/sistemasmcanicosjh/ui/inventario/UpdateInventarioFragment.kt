@@ -1,5 +1,6 @@
 package com.sistemasmcanicosjh.ui.inventario
 
+import android.app.AlertDialog
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -40,6 +41,7 @@ class UpdateInventarioFragment : Fragment() {
         binding.etEstado.setText(args.inventario.estado)
 
         binding.btUpdated.setOnClickListener{ updateObjeto()}
+        binding.btDeleteInventario.setOnClickListener{ deleteInventario()}
 
         return binding.root
     }
@@ -59,5 +61,27 @@ class UpdateInventarioFragment : Fragment() {
             Toast.makeText(requireContext(),getString(R.string.msgFaltanDatos),Toast.LENGTH_LONG).show()
         }
         findNavController().navigate(R.id.action_updateInventarioFragment2_to_nav_inventario)
+    }
+
+    private fun deleteInventario(){
+        val builder= AlertDialog.Builder(requireContext())
+
+        builder.setTitle(getString(R.string.deleted))
+        builder.setMessage(getString(R.string.seguroBorrar) + " ${args.inventario.nombre}")
+
+        builder.setPositiveButton(getString(R.string.si)) {_,_ ->
+
+            inventarioViewModel.deleteInventario(args.inventario)
+            findNavController().navigate(R.id.action_updateInventarioFragment2_to_nav_inventario)
+
+        }
+
+        builder.setNegativeButton(getString(R.string.no)){_,_ -> }
+        builder.create().show()
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }
