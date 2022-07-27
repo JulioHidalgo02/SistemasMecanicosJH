@@ -3,14 +3,17 @@
     xmlns:android="http://schemas.android.com/apk/res/android"    xmlns:app="http://schemas.android.com/apk/res-auto"    xmlns:tools="http://schemas.android.com/tools"    android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.clientes.UpdateClientesFragment">
+
     <ScrollView
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/bg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.436">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -86,12 +89,21 @@
                 android:textColorHint="#424242" />
 
             <Button
-                android:id="@+id/bt_Updated"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:id="@+id/bt_Delete"
+                android:layout_width="388dp"
+                android:layout_height="48dp"
+                android:backgroundTint="#F9CD16"
+                android:text="@string/bt_eliminar"
+                android:textColor="#455A64" />
+
+            <Button
+                android:id="@+id/bt_Update"
+                android:layout_width="384dp"
+                android:layout_height="47dp"
                 android:backgroundTint="#F9CD16"
                 android:text="@string/bt_actualizar"
-                android:textColor="#455A64" />
+                android:textColor="#455A64"
+                tools:ignore="TouchTargetSizeCheck" />
 
 
         </LinearLayout>

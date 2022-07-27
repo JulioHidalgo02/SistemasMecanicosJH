@@ -1,5 +1,6 @@
 package com.sistemasmcanicosjh.ui.clientes
 
+import android.app.AlertDialog
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -42,7 +43,8 @@ class UpdateClientesFragment : Fragment() {
         binding.etAltura.setText(args.clintes.altura.toString())
 
 
-        binding.btUpdated.setOnClickListener{ updateObjeto()}
+        binding.btUpdate.setOnClickListener{ updateObjeto()}
+        binding.btDelete.setOnClickListener{ deleteClientes()}
 
         return binding.root
     }
@@ -64,5 +66,27 @@ class UpdateClientesFragment : Fragment() {
             Toast.makeText(requireContext(),getString(R.string.msgFaltanDatos),Toast.LENGTH_LONG).show()
         }
         findNavController().navigate(R.id.action_updateClientesFragment2_to_nav_clientes)
+    }
+
+    private fun deleteClientes(){
+        val builder= AlertDialog.Builder(requireContext())
+
+        builder.setTitle(getString(R.string.deleted))
+        builder.setMessage(getString(R.string.seguroBorrar) + " ${args.clintes.nombreCompleto}")
+
+        builder.setPositiveButton(getString(R.string.si)) {_,_ ->
+
+            clientesViewModel.deleteClientes(args.clintes)
+            findNavController().navigate(R.id.action_updateClientesFragment2_to_nav_clientes)
+
+        }
+
+        builder.setNegativeButton(getString(R.string.no)){_,_ -> }
+        builder.create().show()
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }

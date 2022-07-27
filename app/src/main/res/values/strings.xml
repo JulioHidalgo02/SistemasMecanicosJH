@@ -34,6 +34,7 @@
     <string name="msg_rutaImagen">Ruta Imagen</string>
     <string name="bt_agregar">Agregar</string>
     <string name="bt_actualizar">Actualizar</string>
+    <string name="bt_eliminar">Eliminar</string>
     <string name="msgObjAgregado">Objeto agregado Satisfactoriamente!</string>
     <string name="msgObjError">Error, Faltan Datos!</string>
     <string name="tv_nombreObjeto">TextView</string>
@@ -44,6 +45,10 @@
     <string name="msgInventarioActualizado" />
     <string name="msgFaltanDatos" />
     <string name="msgClientesActualizado" />
+    <string name="deleted">Elimina Cliente</string>
+    <string name="seguroBorrar">¿Está seguro que desea borrar el cliente?</string>
+    <string name="si">Si</string>
+    <string name="no">No</string>
 
 
 </resources>
