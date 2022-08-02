@@ -55,7 +55,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.072"
-            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintStart_toEndOf="@+id/ImageId"
             app:layout_constraintTop_toBottomOf="@+id/tv_nombreObjeto"
             app:layout_constraintVertical_bias="0.407" />
 
@@ -70,7 +70,7 @@
             app:layout_constraintEnd_toEndOf="parent"
 
             app:layout_constraintHorizontal_bias="0.072"
-            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintStart_toEndOf="@+id/ImageId"
             app:layout_constraintTop_toBottomOf="@+id/tv_marca"
             app:layout_constraintVertical_bias="0.17" />
 
@@ -87,12 +87,12 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.072"
-            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintStart_toEndOf="@+id/ImageId"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/ImageId"
             android:layout_width="137dp"
             android:layout_height="89dp"
             android:layout_marginStart="4dp"

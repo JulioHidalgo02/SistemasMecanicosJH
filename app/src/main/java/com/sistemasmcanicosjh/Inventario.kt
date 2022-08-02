@@ -3,6 +3,7 @@ package com.sistemasmcanicosjh
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -36,16 +37,17 @@ class Inventario : AppCompatActivity() {
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.nav_inventario, R.id.nav_contacto, R.id.nav_clientes, R.id.logoff
+                R.id.nav_inventario, R.id.nav_contacto, R.id.nav_clientes,
             ), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
     }
 
+
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId){
-            R.id.logoff -> {
+            R.id.action_logout -> {
                 Firebase.auth.signOut()
                 finish()
                 true

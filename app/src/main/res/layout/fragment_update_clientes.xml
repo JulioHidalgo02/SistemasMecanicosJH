@@ -44,6 +44,18 @@
                 android:minHeight="48dp"
                 android:textColorHint="#424242" />
 
+
+            <EditText
+                android:id="@+id/etTelefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/msg_telefono"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp"
+                android:textColorHint="#37474F" />
+
             <EditText
                 android:id="@+id/etLatitud"
                 android:layout_width="match_parent"
@@ -51,10 +63,9 @@
                 android:autofillHints=""
                 android:ems="10"
                 android:hint="@string/msg_latitud"
-                android:inputType="numberDecimal"
+                android:inputType="textPersonName|numberDecimal"
                 android:minHeight="48dp"
-                android:textColorHint="#37474F" />
-
+                android:textColorHint="#424242" />
             <EditText
                 android:id="@+id/etLongitud"
                 android:layout_width="match_parent"
@@ -63,28 +74,6 @@
                 android:ems="10"
                 android:hint="@string/msg_longitud"
                 android:inputType="textPersonName|numberDecimal"
-                android:minHeight="48dp"
-                android:textColorHint="#424242" />
-
-            <EditText
-                android:id="@+id/etAltura"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:autofillHints=""
-                android:ems="10"
-                android:hint="@string/msg_altura"
-                android:inputType="textPersonName|numberDecimal"
-                android:minHeight="48dp"
-                android:textColorHint="#424242" />
-
-            <EditText
-                android:id="@+id/etRutaImagen"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:autofillHints=""
-                android:ems="10"
-                android:hint="@string/msg_rutaImagen"
-                android:inputType="textPersonName"
                 android:minHeight="48dp"
                 android:textColorHint="#424242" />
 
@@ -114,6 +103,15 @@
                     android:textColor="#455A64"
                     tools:ignore="TouchTargetSizeCheck" />
             </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imagen"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:contentDescription="@string/msg_imagen"
+                android:scaleType="centerInside"
+                tools:ignore="ImageContrastCheck"
+                tools:src="@tools:sample/backgrounds/scenic" />
 
 
         </LinearLayout>

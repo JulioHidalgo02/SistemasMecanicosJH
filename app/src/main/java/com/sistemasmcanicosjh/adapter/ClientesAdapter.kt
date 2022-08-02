@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.sistemasmcanicosjh.databinding.ClientesFilaBinding
 import com.sistemasmcanicosjh.databinding.FragmentAddClientesBinding
 import com.sistemasmcanicosjh.model.Clientes
@@ -23,10 +24,11 @@ class ClientesAdapter : RecyclerView.Adapter<ClientesAdapter.ClientesViewHolder>
 
             itemBinding.tvNombreCompleto.text = clientes.nombreCompleto
             itemBinding.tvCorreo.text = clientes.correo
-            itemBinding.tvLatitud.text = clientes.latitud.toString()
-            itemBinding.tvLongitud.text = clientes.longitud.toString()
-            itemBinding.tvAltura.text = clientes.altura.toString()
-            itemBinding.tvRutaImagen.text = clientes.rutaImagen
+            itemBinding.tvTelefono.text = clientes.telefono
+            Glide.with(itemBinding.root.context)
+                .load(clientes.rutaImagen)
+                .circleCrop()
+                .into(itemBinding.imagenCliente)
             itemBinding.btUpdate.setOnClickListener{
                 val accion = ClientesFragmentDirections
                     .actionNavClientesToUpdateClientesFragment2(clientes)

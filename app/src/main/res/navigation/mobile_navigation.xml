@@ -21,7 +21,7 @@
     <fragment
         android:id="@+id/nav_clientes"
         android:name="com.sistemasmcanicosjh.ui.clientes.ClientesFragment"
-        android:label="@string/Inventario"
+        android:label="@string/Clientes"
         tools:layout="@layout/fragment_clientes">
         <action
             android:id="@+id/action_nav_clientes_to_addClintesFragment"
@@ -40,7 +40,7 @@
     <fragment
         android:id="@+id/addInventarioFragment"
         android:name="com.sistemasmcanicosjh.ui.inventario.AddInventarioFragment"
-        android:label="fragment_add_inventario"
+        android:label="@string/AddInventario"
         tools:layout="@layout/fragment_add_inventario" >
         <action
             android:id="@+id/action_addInventarioFragment_to_nav_inventario"
@@ -49,7 +49,7 @@
     <fragment
         android:id="@+id/updateInventarioFragment2"
         android:name="com.sistemasmcanicosjh.ui.inventario.UpdateInventarioFragment"
-        android:label="fragment_update_inventario"
+        android:label="@string/UpdateInventario"
         tools:layout="@layout/fragment_update_inventario" >
         <action
             android:id="@+id/action_updateInventarioFragment2_to_nav_inventario"
@@ -61,7 +61,7 @@
     <fragment
         android:id="@+id/addClientesFragment"
         android:name="com.sistemasmcanicosjh.ui.clientes.AddClientesFragment"
-        android:label="fragment_add_clientes"
+        android:label="@string/AddCliente"
         tools:layout="@layout/fragment_add_clientes" >
         <action
             android:id="@+id/action_addClientesFragment_to_nav_clientes"
@@ -70,7 +70,7 @@
     <fragment
         android:id="@+id/updateClientesFragment2"
         android:name="com.sistemasmcanicosjh.ui.clientes.UpdateClientesFragment"
-        android:label="fragment_update_clientes"
+        android:label="@string/UpdateCliente"
         tools:layout="@layout/fragment_update_clientes" >
         <action
             android:id="@+id/action_updateClientesFragment2_to_nav_clientes"

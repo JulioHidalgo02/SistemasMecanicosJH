@@ -10,6 +10,7 @@ import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
+import com.bumptech.glide.Glide
 import com.sistemasmcanicosjh.R
 import com.sistemasmcanicosjh.databinding.FragmentUpdateClientesBinding
 import com.sistemasmcanicosjh.model.Clientes
@@ -37,10 +38,16 @@ class UpdateClientesFragment : Fragment() {
 
         binding.etNombreCompleto.setText(args.clintes.nombreCompleto)
         binding.etCorreo.setText(args.clintes.correo)
-        binding.etRutaImagen.setText(args.clintes.rutaImagen)
+        binding.etTelefono.setText(args.clintes.telefono)
         binding.etLatitud.setText(args.clintes.latitud.toString())
         binding.etLongitud.setText(args.clintes.longitud.toString())
-        binding.etAltura.setText(args.clintes.altura.toString())
+
+        if(args.clintes.rutaImagen?.isNotEmpty()==true){
+            Glide.with(requireContext())
+                .load(args.clintes.rutaImagen)
+                .fitCenter()
+                .into(binding.imagen)
+        }
 
 
         binding.btUpdate.setOnClickListener{ updateObjeto()}
@@ -52,14 +59,14 @@ class UpdateClientesFragment : Fragment() {
     private fun updateObjeto() {
         val nombreCompleto = binding.etNombreCompleto.text.toString()
         val correo = binding.etCorreo.text.toString()
+        val telefono = binding.etTelefono.text.toString()
         val latitud = binding.etLatitud.text.toString().toDouble()
         val longitud = binding.etLongitud.text.toString().toDouble()
-        val altura = binding.etAltura.text.toString().toDouble()
-        val rutaImagen = binding.etRutaImagen.text.toString()
+
 
 
       if(nombreCompleto.isNotEmpty()){
-            val clientes = Clientes(args.clintes.id,nombreCompleto, correo, latitud, longitud,altura,rutaImagen)
+            val clientes = Clientes(args.clintes.id,nombreCompleto, correo, telefono, latitud, longitud,args.clintes.rutaImagen)
             clientesViewModel.updateClientes(clientes)
             Toast.makeText(requireContext(),getString(R.string.msgClientesActualizado),Toast.LENGTH_LONG).show()
         } else{

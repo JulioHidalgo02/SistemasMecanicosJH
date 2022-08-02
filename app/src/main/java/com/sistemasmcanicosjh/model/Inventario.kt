@@ -18,5 +18,7 @@ data class Inventario(
     @ColumnInfo(name="cantidadObjetos")
     val cantidad: Int?,
     @ColumnInfo(name="estado")
-    val estado: String?
+    val estado: String?,
+    @ColumnInfo(name="ruta")
+    val rutaImagen: String?
 ) : Parcelable

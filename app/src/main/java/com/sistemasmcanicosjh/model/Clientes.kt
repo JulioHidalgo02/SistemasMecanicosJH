@@ -8,11 +8,11 @@ data class Clientes(
     var id: String,
     val nombreCompleto: String,
     val correo: String?,
+    val telefono: String?,
     val latitud: Double?,
     val longitud: Double?,
-    val altura: Double?,
     val rutaImagen: String?
 ) : Parcelable{
     constructor():
-            this("","","",0.0,0.0,0.0,"")
+            this("","","","",0.0,0.0,"")
 }

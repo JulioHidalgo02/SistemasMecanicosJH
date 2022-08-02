@@ -10,6 +10,7 @@ import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
+import com.bumptech.glide.Glide
 import com.sistemasmcanicosjh.R
 import com.sistemasmcanicosjh.databinding.FragmentUpdateInventarioBinding
 import com.sistemasmcanicosjh.model.Inventario
@@ -39,7 +40,12 @@ class UpdateInventarioFragment : Fragment() {
         binding.etMarca.setText(args.inventario.marca)
         binding.etCantidad.setText(args.inventario.cantidad.toString())
         binding.etEstado.setText(args.inventario.estado)
-
+        if(args.inventario.rutaImagen?.isNotEmpty()==true){
+            Glide.with(requireContext())
+                .load(args.inventario.rutaImagen)
+                .fitCenter()
+                .into(binding.imagen)
+        }
         binding.btUpdated.setOnClickListener{ updateObjeto()}
         binding.btDeleteInventario.setOnClickListener{ deleteInventario()}
 
@@ -54,7 +60,7 @@ class UpdateInventarioFragment : Fragment() {
 
 
       if(nombre.isNotEmpty()){
-            val inventario = Inventario(args.inventario.id,nombre,marca,cantidad,estado)
+            val inventario = Inventario(args.inventario.id,nombre,marca,cantidad,estado,args.inventario.rutaImagen)
             inventarioViewModel.updateInventario(inventario)
             Toast.makeText(requireContext(),getString(R.string.msgInventarioActualizado),Toast.LENGTH_LONG).show()
         } else{

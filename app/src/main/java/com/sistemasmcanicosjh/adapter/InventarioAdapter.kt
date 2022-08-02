@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.sistemasmcanicosjh.databinding.InventarioFilaBinding
 import com.sistemasmcanicosjh.databinding.FragmentAddInventarioBinding
 import com.sistemasmcanicosjh.model.Inventario
@@ -25,6 +26,10 @@ class InventarioAdapter : RecyclerView.Adapter<InventarioAdapter.InventarioViewH
             itemBinding.tvEstado.text = inventario.estado
             itemBinding.tvMarca.text = inventario.marca
             itemBinding.tvCantidadObjetos.text = inventario.cantidad.toString()
+            Glide.with(itemBinding.root.context)
+                .load(inventario.rutaImagen)
+                .circleCrop()
+                .into(itemBinding.ImageId)
             itemBinding.btUpdate.setOnClickListener{
                 val accion = InventarioFragmentDirections
                     .actionNavInventarioToUpdateInventarioFragment2(inventario)
