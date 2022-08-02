@@ -17,6 +17,8 @@
         <entry key="..\:/Users/carlo/AndroidStudioProjects/SistemasMcanicosJH/app/src/main/res/layout/nav_header_inventario.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/carlo/AndroidStudioProjects/SistemasMcanicosJH/app/src/main/res/menu/activity_main_drawer.xml" value="0.33" />
         <entry key="..\:/Users/carlo/AndroidStudioProjects/SistemasMcanicosJH/app/src/main/res/menu/inventario.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/ellis/AndroidStudioProjects/SistemasMecanicosJH/app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.1405" />
+        <entry key="..\:/Users/ellis/AndroidStudioProjects/SistemasMecanicosJH/app/src/main/res/drawable/ic_whats.xml" value="0.1405" />
         <entry key="..\:/Users/ellis/AndroidStudioProjects/SistemasMecanicosJH/app/src/main/res/layout/activity_clientes.xml" value="0.14814814814814814" />
         <entry key="..\:/Users/ellis/AndroidStudioProjects/SistemasMecanicosJH/app/src/main/res/layout/activity_inventario.xml" value="0.14814814814814814" />
         <entry key="..\:/Users/ellis/AndroidStudioProjects/SistemasMecanicosJH/app/src/main/res/layout/activity_main.xml" value="0.14814814814814814" />
@@ -34,6 +36,7 @@
         <entry key="..\:/Users/ellis/AndroidStudioProjects/SistemasMecanicosJH/app/src/main/res/layout/fragment_cliente.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/ellis/AndroidStudioProjects/SistemasMecanicosJH/app/src/main/res/layout/fragment_cliente_inventario.xml" value="0.12685185185185185" />
         <entry key="..\:/Users/ellis/AndroidStudioProjects/SistemasMecanicosJH/app/src/main/res/layout/fragment_clientes.xml" value="0.14814814814814814" />
+        <entry key="..\:/Users/ellis/AndroidStudioProjects/SistemasMecanicosJH/app/src/main/res/layout/fragment_contacto.xml" value="0.14814814814814814" />
         <entry key="..\:/Users/ellis/AndroidStudioProjects/SistemasMecanicosJH/app/src/main/res/layout/fragment_inventario.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/ellis/AndroidStudioProjects/SistemasMecanicosJH/app/src/main/res/layout/fragment_update_cliente.xml" value="0.12685185185185185" />
         <entry key="..\:/Users/ellis/AndroidStudioProjects/SistemasMecanicosJH/app/src/main/res/layout/fragment_update_clientes.xml" value="0.14814814814814814" />
