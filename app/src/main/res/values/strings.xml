@@ -58,6 +58,10 @@
     <string name="UpdateInventario">Acciones Objeto</string>
     <string name="AddCliente">Añadir Cliente</string>
     <string name="UpdateCliente">Acciones Cliente</string>
+    <string name="msg_enviar_correo">Enviar correo electrónico</string>
+    <string name="msg_whatsapp_send">Enviar mensaje por WhatsApp</string>
+    <string name="msg_ver_mapa">Ver ubicación</string>
+    <string name="msg_phone_call">Realizar llamada telefónica</string>
 
 
 </resources>

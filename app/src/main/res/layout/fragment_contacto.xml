@@ -7,52 +7,9 @@
     android:background="@drawable/bg"
     tools:context=".ui.inventario.InventarioFragment">
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/idEmail"
-        android:layout_width="99dp"
-        android:layout_height="93dp"
-        android:layout_marginEnd="292dp"
-        android:layout_marginBottom="112dp"
-        android:clickable="true"
-        android:src="@drawable/ic_baseline_email_24"
-        app:backgroundTint="#878383"
-        app:borderWidth="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:maxImageSize="60dp"
-        app:pressedTranslationZ="10dp"
-        tools:ignore="SpeakableTextPresentCheck" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/idContact"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginEnd="168dp"
-        android:clickable="true"
-        android:src="@drawable/ic_baseline_phone_24"
-        android:textAlignment="center"
-        app:backgroundTint="#878383"
-        app:borderWidth="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:maxImageSize="60dp"
-        app:pressedTranslationZ="40dp"
-        tools:layout_editor_absoluteY="527dp" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/idWhats"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginEnd="52dp"
-        android:layout_marginBottom="104dp"
-        android:clickable="true"
-        android:src="@drawable/ic_whats"
-        app:backgroundTint="#878383"
-        app:borderWidth="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:maxImageSize="50dp"
-        app:pressedTranslationZ="10dp"
-        android:contentDescription="TODO" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
