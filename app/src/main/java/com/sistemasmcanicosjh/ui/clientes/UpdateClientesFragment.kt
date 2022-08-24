@@ -1,6 +1,10 @@
 package com.sistemasmcanicosjh.ui.clientes
 
+import android.Manifest
 import android.app.AlertDialog
+import android.content.Intent
+import android.content.pm.PackageManager
+import android.net.Uri
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -52,6 +56,10 @@ class UpdateClientesFragment : Fragment() {
 
         binding.btUpdate.setOnClickListener{ updateObjeto()}
         binding.btDelete.setOnClickListener{ deleteClientes()}
+        binding.btEmail.setOnClickListener{ EnviarCorreo()}
+        binding.btLocation.setOnClickListener{ Ubicacion()}
+        binding.btWhatsapp.setOnClickListener{ ContactarWhatsApp()}
+        binding.btPhone.setOnClickListener{ LlamarCliente()}
 
         return binding.root
     }
@@ -90,6 +98,83 @@ class UpdateClientesFragment : Fragment() {
 
         builder.setNegativeButton(getString(R.string.no)){_,_ -> }
         builder.create().show()
+    }
+
+
+    private fun ContactarWhatsApp() {
+        val telefono = binding.etTelefono.text
+        if(telefono.isNotEmpty()){
+            val sendIntent = Intent(Intent.ACTION_VIEW)
+            val uri =
+                "whatsapp://send?phone=506$telefono&text=" +
+                        getString(R.string.msg_saludos)
+            sendIntent.setPackage("com.whatsapp")
+            sendIntent.data = Uri.parse(uri)
+            startActivity(sendIntent)
+        }else{
+            Toast.makeText(requireContext(),
+                getString(R.string.msg_datos), Toast.LENGTH_SHORT).show()
+        }
+    }
+
+    private fun Ubicacion() {
+        val latitud=binding.etLatitud.text.toString().toDouble()
+        val longitud=binding.etLongitud.text.toString().toDouble()
+        if(latitud.isFinite() && longitud.isFinite()){
+            val location = Uri.parse("geo:$latitud,$longitud?z18")
+            val mapIntent = Intent(Intent.ACTION_VIEW,location)
+            startActivity(mapIntent)
+        }else{
+
+        }
+
+    }
+
+    private fun LlamarCliente() {
+
+        val recurso = binding.etTelefono.text.toString()
+        if (recurso.isNotEmpty()){
+
+            val rutina = Intent(Intent.ACTION_CALL)
+            rutina.data = Uri.parse("tel:$recurso")
+            if(requireActivity().checkSelfPermission(Manifest.permission.CALL_PHONE)
+                != PackageManager.PERMISSION_GRANTED){
+                requireActivity()
+                    .requestPermissions(arrayOf(Manifest.permission.CALL_PHONE),105)
+            }else{
+                requireActivity().startActivity(rutina)
+            }
+            startActivity(rutina)
+        }else{
+            Toast.makeText(
+                requireContext(),
+                getString(R.string.msg_datos),Toast.LENGTH_SHORT
+            ).show()
+        }
+    }
+
+    private fun EnviarCorreo() {
+        //Se recupera el correo del lugar
+        val recurso = binding.etCorreo.text.toString()
+        if (recurso.isNotEmpty()){
+            //Se activa el correo
+            val rutina = Intent(Intent.ACTION_SEND)
+            rutina.type="message/rfc822"
+            rutina.putExtra(Intent.EXTRA_EMAIL, arrayOf(recurso))
+            rutina.putExtra(
+                Intent.EXTRA_SUBJECT,
+                getString(R.string.msg_saludos) + " " + binding.etNombreCompleto.text)
+            rutina.putExtra(
+                Intent.EXTRA_TEXT,
+                getString(R.string.msg_mensaje_correo))
+            startActivity(rutina)
+        }else{
+            Toast.makeText(
+                requireContext(),
+                getString(R.string.msg_datos),Toast.LENGTH_SHORT
+            ).show()
+        }
+
     }
 
     override fun onDestroyView() {

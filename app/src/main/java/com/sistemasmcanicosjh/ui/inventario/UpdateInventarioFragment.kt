@@ -1,6 +1,10 @@
 package com.sistemasmcanicosjh.ui.inventario
 
+import android.Manifest
 import android.app.AlertDialog
+import android.content.Intent
+import android.content.pm.PackageManager
+import android.net.Uri
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -85,6 +89,7 @@ class UpdateInventarioFragment : Fragment() {
         builder.setNegativeButton(getString(R.string.no)){_,_ -> }
         builder.create().show()
     }
+
 
     override fun onDestroyView() {
         super.onDestroyView()

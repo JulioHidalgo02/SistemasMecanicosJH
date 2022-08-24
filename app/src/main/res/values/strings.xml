@@ -1,12 +1,12 @@
 <resources>
-    <string name="app_name">SistemasMécanicosJH</string>
-    <string name="Correo">Correo Electrónico</string>
+    <string name="app_name" translatable="false">SistemasMécanicosJH</string>
+    <string name="Correo">Correo</string>
     <string name="Contrasenia">Contraseña</string>
     <string name="SistemasMecanicos">Sistemas Mecánicos JH</string>
-    <string name="Registrarse">Registrarse</string>
+    <string name="Registrarse">Registrar</string>
     <string name="IniciarSesion">Iniciar Sesión</string>
-    <string name="msg_fallo_login">Error, Fallo al iniciar sesión!</string>
-    <string name="msg_fallo_registro">Error, Fallo al registrar!</string>
+    <string name="msg_fallo_login">Error, al iniciar Sesión!</string>
+    <string name="msg_fallo_registro">Error, al Registrarse!</string>
     <string name="title_activity_inventario">Inventario</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -22,9 +22,9 @@
     <string name="Inventario">SMJH - Inventario</string>
     <string name="Inventario2">Inventario</string>
 
-    <string name="msg_nombre">Nombre del Objeto</string>
+    <string name="msg_nombre">Nombre del objeto</string>
     <string name="msg_marca">Marca</string>
-    <string name="msg_cantidad">Cantidad de Objetos</string>
+    <string name="msg_cantidad">Cantitdad de objetos</string>
     <string name="msg_estado">Estado</string>
     <string name="msg_nombreCompleto">Nombre Completo</string>
     <string name="msg_correo">Correo</string>
@@ -34,34 +34,38 @@
     <string name="msg_altura">Altura</string>
     <string name="msg_rutaImagen">Ruta Imagen</string>
     <string name="bt_agregar">Agregar</string>
+    <string name="bt_acciones">Acciones</string>
     <string name="bt_actualizar">Actualizar</string>
     <string name="bt_eliminar">Eliminar</string>
-    <string name="msgObjAgregado">Objeto agregado Satisfactoriamente!</string>
-    <string name="msgObjError">Error, Faltan Datos!</string>
+    <string name="msgObjAgregado">Objeto añadido Satisfactoriamente!</string>
+    <string name="msgObjError">Error, faltan Datos</string>
     <string name="tv_nombreObjeto">TextView</string>
     <string name="tv_marca">TextView</string>
     <string name="tv_cantidadObjetos">TextView</string>
     <string name="tv_estado">TextView</string>
-    <string name="tv_herramienta">TODO</string>
-    <string name="msgInventarioActualizado" />
-    <string name="msgFaltanDatos" />
-    <string name="msgClientesActualizado" />
-    <string name="deleted">Elimina Cliente</string>
-    <string name="seguroBorrar">¿Está seguro que desea borrar el cliente?</string>
+    <string name="tv_herramienta">Por definir</string>
+    <string name="msgInventarioActualizado" >Inventario Actualizado</string>
+    <string name="msgFaltanDatos" >Error, Faltan  Datos</string>
+    <string name="msgClientesActualizado" >Cliente Actualizado</string>
+    <string name="deleted">Eliminar Clientes</string>
+    <string name="seguroBorrar">Estas seguro de eliminar</string>
     <string name="si">Si</string>
     <string name="no">No</string>
-    <string name="todo">Por definir</string>
+    <string name="todo">To do</string>
     <string name="msg_subiendo_imagen">Subiendo Imagen</string>
-    <string name="msg_imagen">Imagen Cargada</string>
+    <string name="msg_imagen">Imagen Subida</string>
     <string name="Clientes">SMJH - Clientes</string>
     <string name="AddInventario">Añadir al Inventario</string>
     <string name="UpdateInventario">Acciones Objeto</string>
     <string name="AddCliente">Añadir Cliente</string>
     <string name="UpdateCliente">Acciones Cliente</string>
-    <string name="msg_enviar_correo">Enviar correo electrónico</string>
-    <string name="msg_whatsapp_send">Enviar mensaje por WhatsApp</string>
-    <string name="msg_ver_mapa">Ver ubicación</string>
-    <string name="msg_phone_call">Realizar llamada telefónica</string>
+    <string name="msg_enviar_correo">Enviar Email</string>
+    <string name="msg_whatsapp_send">Enviar WhatsApp</string>
+    <string name="msg_ver_mapa">Ver Ubicación</string>
+    <string name="msg_phone_call">Realizar Llamada</string>
+    <string name="msg_datos">Error, faltan datos</string>
+    <string name="msg_saludos">"Querido: "</string>
+    <string name="msg_mensaje_correo">"Le escribo este correo para  "</string>
 
 
 </resources>

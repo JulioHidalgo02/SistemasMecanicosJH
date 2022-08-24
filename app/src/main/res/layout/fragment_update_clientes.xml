@@ -63,9 +63,10 @@
                 android:autofillHints=""
                 android:ems="10"
                 android:hint="@string/msg_latitud"
-                android:inputType="textPersonName|numberDecimal"
+                android:inputType="text"
                 android:minHeight="48dp"
                 android:textColorHint="#424242" />
+
             <EditText
                 android:id="@+id/etLongitud"
                 android:layout_width="match_parent"
@@ -73,7 +74,7 @@
                 android:autofillHints=""
                 android:ems="10"
                 android:hint="@string/msg_longitud"
-                android:inputType="textPersonName|numberDecimal"
+                android:inputType="text"
                 android:minHeight="48dp"
                 android:textColorHint="#424242" />
 
